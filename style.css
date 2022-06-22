@@ -152,7 +152,6 @@ aside .close {
 /*========== SIDEBAR ===========*/
 
 aside .sidebar{
-    background: white;
     display: flex;
     flex-direction: column;
     height: 86vh;
@@ -211,6 +210,7 @@ aside .sidebar a:hover{
 aside .sidebar a:hover span{
     margin-left: 1rem;
 }
+
 
 
 
