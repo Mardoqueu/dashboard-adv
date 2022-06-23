@@ -130,7 +130,6 @@ aside{
 }
 
 aside .top {
-    background: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -461,4 +460,52 @@ main .processos a{
     grid-template-columns: 2.6rem auto;
     gap: 1rem;
     margin-bottom: 1rem;
+}
+
+/*================Media Queries==================*/
+@media screen and (max-width: 1200px){
+    .container{
+        width: 94%;
+        grid-template-columns: 7rem auto 23ren;
+    }
+    
+    aside .logo h2{
+        display: none;
+    }
+
+    aside .sidebar h3{
+        display: none;
+    }
+
+    aside .sidebar a{
+        width: 5.6rem;
+    }
+
+    aside .sidebar a:last-child{
+        position: relative;
+        margin-top: 1.8rem;
+    }
+
+    main .insights{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    main .recent-updates{
+        width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin: 2 rem 0 0 8.8rem;
+    }
+
+    
+    main .recent-updates{
+        width: 83vw;
+    }
+
+    main table tbody tr th:last-child, 
+    main table tbody tr th:first-child{
+        display: none;
+    }
 }
