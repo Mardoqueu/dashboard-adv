@@ -25,6 +25,8 @@
     --box-shadow: 0 2rem 3rem var(--color-light)
 }
 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -519,7 +521,7 @@ main .processos a{
 
     aside{
         position: fixed;
-        left: 0;
+        left: -110%;
         background: var(--color-white);
         width: 18rem;
         z-index: 3;
@@ -527,7 +529,15 @@ main .processos a{
         height: 100vh;
         padding-right: var(--card-padding);
         display: none;
+        animation: showMenu 400ms ease forwards;
     }
+
+    @keyframes showMenu{
+        to{
+        left: 0;
+        }
+    }
+
 
     aside .logo{
         margin-left: 1rem;
